@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>杨涵 | 个人主页</title>
+    <meta
+      name="description"
+      content="杨涵，同济大学启迪书院本科生，关注深度学习、通用人工智能、智能体系统与具身智能。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到首页">杨涵</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">能力</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Tongji University · Embodied AI · Agent Systems</p>
+          <h1 id="hero-title">杨涵</h1>
+          <p class="hero-lead">
+            同济大学启迪书院本科生，同济大学具身感知与智能计算实验室成员。
+            我关注深度学习、通用人工智能与智能体系统，正在通过项目实践把模型能力落到真实任务与交互系统中。
+          </p>
+          <div class="hero-actions" aria-label="快捷入口">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="mailto:yanghan0316@tongji.edu.cn">发送邮件</a>
+          </div>
+        </div>
+
+        <figure class="portrait-wrap">
+          <img src="picture.jpg" alt="杨涵证件照" class="portrait" />
+          <figcaption class="portrait-note">
+            <span>同济大学 · 大一在读</span>
+            <span>具身感知与智能计算实验室</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section intro-grid" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">把智能体能力带入可运行的系统</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            我具备较扎实的 C++ 与 Python 基础，长期关注 AI Agent、世界模型、自动驾驶风险决策、
+            机器人视觉识别与多智能体协作机制。我的项目经历覆盖算法设计、数据处理、模型训练、前端原型、
+            交互系统搭建与团队协作。
+          </p>
+          <p>
+            当前，我希望继续在具身智能和智能体系统方向积累研究与工程经验，探索模型如何理解场景、
+            做出决策，并在复杂任务中形成稳定的价值循环。
+          </p>
+        </div>
+      </section>
+
+      <section class="section focus-band" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="section-kicker">Focus</p>
+          <h2 id="focus-title">研究与实践方向</h2>
+        </div>
+        <div class="focus-list">
+          <article>
+            <span class="focus-index">01</span>
+            <h3>智能体系统</h3>
+            <p>面向任务协作、资源交易和状态管理，构建可交互、可演化的 Agent 原型系统。</p>
+          </article>
+          <article>
+            <span class="focus-index">02</span>
+            <h3>世界模型与决策</h3>
+            <p>关注自动驾驶失效接管场景中的风险预测、环境理解与最小风险策略生成。</p>
+          </article>
+          <article>
+            <span class="focus-index">03</span>
+            <h3>具身视觉</h3>
+            <p>结合视觉识别与大模型 Agent，让机器人从自然语言指令走向空间任务执行。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2 id="projects-title">代表项目</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-meta">
+              <span>国家级大学生创新创业训练项目</span>
+              <span>2025.10 至今</span>
+            </div>
+            <h3>AegisDrive</h3>
+            <p class="project-role">项目负责人 · 5 人团队</p>
+            <p>
+              面向自动驾驶失效且驾驶员不适合接管的场景，构建世界模型辅助的最小风险决策系统。
+              我负责完整舱外预测体系设计与开发，包括摄像头数据结构化、大模型辅助场景描述、skill
+              设计与训练、世界模型训练和评估。
+            </p>
+            <div class="project-tags" aria-label="AegisDrive 关键词">
+              <span>自动驾驶</span>
+              <span>世界模型</span>
+              <span>风险决策</span>
+              <span>多模态场景理解</span>
+            </div>
+            <a class="text-link" href="https://github.com/yanghan0316-cloud/IDMS_Project" target="_blank" rel="noreferrer">
+              GitHub 项目地址
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>实验室项目</span>
+              <span>2026.3 至今</span>
+            </div>
+            <h3>TOKEN 智能体交易所</h3>
+            <p class="project-role">独立负责人</p>
+            <p>
+              创建 Token Agent MVP 原型系统，面向虚拟智能体交易与任务协作场景，整合 Web 前端交互、
+              像素风可视化、Token 经济机制与智能体状态管理，实现智能体创建、租赁、购买、工作收益与
+              Token 流转等基础功能。
+            </p>
+            <div class="project-tags" aria-label="TOKEN 智能体交易所关键词">
+              <span>AI Agent</span>
+              <span>Token 经济</span>
+              <span>Web 原型</span>
+              <span>多智能体市场</span>
+            </div>
+            <a class="text-link" href="https://yanghan0316-cloud.github.io/token-agent-mvp/" target="_blank" rel="noreferrer">
+              在线项目展示
+            </a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span>挑战杯中国大学生创业计划竞赛项目</span>
+              <span>2025.11 - 2026.4</span>
+            </div>
+            <h3>Voicecraft “言筑”</h3>
+            <p class="project-role">视觉模块负责人 · 10 人团队</p>
+            <p>
+              面向机器人空间搭建任务，基于大模型 Agent 与视觉识别技术，接收自然语言指令并完成建筑搭建动作。
+              我负责机器人视觉识别算法开发、数据采集、模型训练与对齐、后训练优化，并围绕幻觉与决策偏差等
+              Bad Case 持续迭代。
+            </p>
+            <div class="project-tags" aria-label="Voicecraft 关键词">
+              <span>具身智能</span>
+              <span>机器人视觉</span>
+              <span>大模型 Agent</span>
+              <span>模型训练与对齐</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-contact" id="skills" aria-labelledby="skills-title">
+        <div>
+          <p class="section-kicker">Skills</p>
+          <h2 id="skills-title">技术能力</h2>
+          <div class="skill-tags" aria-label="技能标签">
+            <span>C++</span>
+            <span>Python</span>
+            <span>Deep Learning</span>
+            <span>AI Agent</span>
+            <span>World Model</span>
+            <span>Computer Vision</span>
+            <span>Web Prototype</span>
+            <span>Team Leadership</span>
+          </div>
+        </div>
+
+        <aside class="contact-panel" id="contact" aria-labelledby="contact-title">
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">保持联系</h2>
+          <p>欢迎围绕智能体系统、具身智能、自动驾驶决策与机器人视觉方向交流。</p>
+          <a class="mail-link" href="mailto:yanghan0316@tongji.edu.cn">yanghan0316@tongji.edu.cn</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 杨涵</span>
+      <span>Built for research, engineering, and useful agents.</span>
+    </footer>
+  </body>
+</html>
