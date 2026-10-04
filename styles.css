@@ -34,6 +34,10 @@ ul { padding: 0; }
 .nav a:hover::after { transform: scaleX(1); }
 .header-contact { display: inline-flex; align-items: center; gap: 17px; min-height: 44px; color: var(--green); font-size: 12px; font-weight: 600; }
 .header-contact:hover { color: var(--plum); }
+.header-actions { display: flex; align-items: center; flex-shrink: 0; gap: 20px; }
+.language-toggle { display: inline-flex; align-items: center; justify-content: center; min-width: 46px; min-height: 44px; padding: 6px 10px; border: 1px solid #c5cdc1; border-radius: 5px; color: var(--green); background: transparent; font: 600 12px var(--sans); cursor: pointer; transition: background .2s, border-color .2s; }
+.language-toggle:hover { border-color: var(--green); background: #edf1e9; }
+.language-toggle[hidden] { display: none; }
 
 /* Introduction and the original portrait, treated as a small printed photograph. */
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 330px; align-items: center; gap: 96px; padding-block: 78px 66px; }
@@ -235,9 +239,12 @@ h2 { color: var(--ink); font-size: 30px; font-weight: 550; line-height: 1.45; le
   .contact-layout h2 { font-size: 24px; }
 }
 @media (max-width: 620px) {
-  html { scroll-padding-top: 86px; }
+  html { scroll-padding-top: 130px; }
   .shell { width: calc(100% - 40px); }
-  .header-inner { min-height: 68px; gap: 16px; }
+  .header-inner { min-height: 106px; flex-wrap: wrap; gap: 0 16px; padding-top: 9px; }
+  .brand { order: 0; }
+  .header-actions { order: 1; margin-left: auto; }
+  .nav { order: 2; width: 100%; justify-content: space-between; }
   .brand { gap: 8px; }
   .brand-mark { width: 33px; height: 33px; font-size: 12px; }
   .brand-name { font-size: 12px; }
@@ -331,3 +338,11 @@ h2 { color: var(--ink); font-size: 30px; font-weight: 550; line-height: 1.45; le
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .button:hover { transform: none; }
 }
+
+/* English prose needs natural wrapping, especially in the compact method diagrams. */
+html[lang="en"] .title-phrase { display: inline; }
+html[lang="en"] .audit-flow span { flex: 1; overflow-wrap: anywhere; }
+html[lang="en"] .audit-result { align-items: flex-start; }
+html[lang="en"] .visual-top { flex-wrap: wrap; }
+html[lang="en"] .hero-statement { font-family: var(--serif); font-size: clamp(24px, 2.35vw, 30px); line-height: 1.45; }
+html[lang="en"] .research-description, html[lang="en"] .project-description { line-height: 1.8; }
